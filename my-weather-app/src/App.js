@@ -28,7 +28,6 @@ function WeatherApp() {
       "November",
       "December",
     ];
-
     const WeekDays = [
       "Sunday",
       "Monday",
@@ -36,14 +35,12 @@ function WeatherApp() {
       "Wednesday",
       "Thursday",
       "Friday",
-      "Satuirday",
+      "Saturday",
     ];
-
     const currentDate = new Date();
     const date = `${WeekDays[currentDate.getDay()]} ${currentDate.getDate()} ${
-      months[currentDate.getMonth]
-    }
-  }`;
+      months[currentDate.getMonth()]
+    }`;
     return date;
   };
 
